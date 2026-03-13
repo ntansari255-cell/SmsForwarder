@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2B5CE6"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS ke Telegram"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum dikonfigurasi"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"/>
+        <EditText
+            android:id="@+id/etBotToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bot Token"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"/>
+        <EditText
+            android:id="@+id/etChatId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chat ID"
+            android:inputType="number|numberSigned"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"/>
+        <Switch
+            android:id="@+id/switchForward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aktifkan Penerusan SMS"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Simpan Pengaturan"
+            android:backgroundTint="#2B5CE6"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Kirim Pesan Test"
+            android:backgroundTint="#28A745"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>
